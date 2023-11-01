@@ -14,8 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
-            $("#menu-toggle").click(function (e) {
+        jQuery(document).ready(function($) {
+            $("#menu-toggle").click(function(e) {
                 e.preventDefault();
                 $("#wrapper").toggleClass("toggled");
             });
@@ -130,7 +130,122 @@
                     สถานะการนําเข้าข้อมูล -> รายวัน</a>
                 <a class="list-group-item list-group-item-action bg-light" href="{{ route('importMonths.index') }}">
                     สถานะการนําเข้าข้อมูล -> รายเดือน</a>
-
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('religiousReportZone.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> ศาสนสถาน -> ผลการดําเนินงานระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('religiousReportProvince.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> ศาสนสถาน -> ผลการดําเนินงานระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('religiousReportOverview.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> ศาสนสถาน -> ผลการดําเนินงานภาพรวม</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('religiousReportDistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> ศาสนสถาน -> ผลการดําเนินงานระดับอำเภอ/เขต</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light" href="{{ route('cbtxesReport.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการการบําบัดยาเสพติด ->
+                    รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง (CBTx)</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('cbtxesReportSpecific.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการการบําบัดยาเสพติด ->
+                    รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง (CBTx) รายบุคคล</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('youthOutReportSum.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการป้องกันยาเสพติด (เยาวชนนอกสถานศึกษา) -> สรุปผลปฏิบัติงาน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('youthOutReportOverview.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการป้องกันยาเสพติด (เยาวชนนอกสถานศึกษา) ->
+                    ผลการดําเนินงานภาพรวม</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('youthOutReportProvince.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการป้องกันยาเสพติด (เยาวชนนอกสถานศึกษา) ->
+                    ผลการดําเนินงานระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('youthOutReportDistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการป้องกันยาเสพติด (เยาวชนนอกสถานศึกษา) ->
+                    ผลการดําเนินงานระดับอำเภอ/เขต</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('youthOutReportSubDistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> มาตราการป้องกันยาเสพติด (เยาวชนนอกสถานศึกษา) ->
+                    ผลการดําเนินงานระดับตำบล/แขวง</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportTypeSubdistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportTypeDistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานแยกตามประเภทระดับอำเภอ/เขต</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportTypeProvince.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานแยกตามประเภทระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportResultDistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานระดับอําเภอ/เขต</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportResultSubdistrict.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานระดับตำบล/แขวง</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportOverview.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานภาพรวม</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('riskAreaReportSum.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> สรุปผลปฏิบัติงาน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('villageTrainingSum.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> สรุปผลปฏิบัติงาน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('villageTrainingOverview.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานภาพรวม</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('villageTrainingProvince.index') }}">
+                    รายงานผลการดําเนินงานรายวัน -> พื้นที่เสี่ยง -> ผลการดําเนินงานระดับจังหวัด</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('schoolReportStratigic.index') }}">
+                    ผลการดําเนินงานในสถานศึกษา ->
+                    รายงานผลการดําเนินงานตามแผนยุทธศาสตร์การป้องกันยาเสพติดในสถานศึกษาประจำปี</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('schoolReportChildren.index') }}">
+                    ผลการดําเนินงานในสถานศึกษา ->
+                    รายงานผลการดําเนินงานภาพรวมด้านการป้องกันยาเสพติดในศูนย์พัฒนาเด็กเล็ก (ศพด.)</a>
+                <a class="list-group-item list-group-item-action bg-light" href="{{ route('schoolReport.index') }}">
+                    ผลการดําเนินงานในสถานศึกษา ->
+                    ผลการดําเนินงานป้องกันและแก้ไขปัญหายาเสพติดในสถานศึกษา</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportRequest.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายชื่อลงทะเบียนขอใช้สิทธิ์</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportPerson.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายชื่อผู้เกี่ยวข้องกับยาเสพติด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportStatistical.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> ผลการประเมินส่งสํานักงานสถิติฯ</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportOverviewSub.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> แบบสรุปภาพรวม จําแนกรายตําบล</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportOverviewProvince.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> แบบสรุปภาพรวม จําแนกรายจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportDetailVillage.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> แบบละเอียด จําแนกรายหมู่บ้าน/ชุมชน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportOverviewDistrict.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> แบบสรุปภาพรวม จําแนกรายอําเภอ/เขต</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportOverviewVillage.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> แบบสรุปภาพรวม จําแนกรายหมู่บ้าน/ชุมชน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportAmountSubdistrict.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับตําบล</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportAmountProvince.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับจังหวัด</a>
             </div>
 
         </div>
@@ -143,8 +258,8 @@
                 <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
