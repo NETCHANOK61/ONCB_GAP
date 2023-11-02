@@ -245,7 +245,63 @@
                     ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับตําบล</a>
                 <a class="list-group-item list-group-item-action bg-light"
                     href="{{ route('communityReportAmountProvince.index') }}">
-                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับจังหวัด</a>
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน
+                    ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportAmountDistrict.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน -> รายงานสรุปจํานวน หมู่บ้าน/ชุมชน
+                    ระดับอำเภอ</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportVillage.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน ->
+                    รายชื่อหมู่บ้าน/ชุมชนทั้งหมดที่ยังไม่ส่งแบบประเมิน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportProblem.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน ->
+                    จําแนกสภาพปัญหาและสถานะความเข้มแข็ง จําแนกรายหมู่บ้าน/ชุมชน</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('communityReportVillageCompare.index') }}">
+                    ผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน ->
+                    ตารางเปรียบเทียบผลการสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน เปรียบเทียบระหว่างปีงบประมาณ</a>
+                <hr>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportHighlight.index') }}">
+                    ผลการดําเนินงานรายเดือน -> โครงการสําคัญ (Highlight) -> รายงานโครงการสําคัญ (Highlight)</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportBudProvince.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
+                    ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportBudZone.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
+                    ระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportMeetingProvince.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม. ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportMeetingZone.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม. ระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportNewsProvince.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานสถานการณ์ยาเสพติด (โต๊ะข่าว) ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportNewsZone.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานสถานการณ์ยาเสพติด (โต๊ะข่าว) ระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportSpendingZone.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานผลการใช้จ่ายงบประมาณ ระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportSpendingProvince.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> รายงานผลการใช้จ่ายงบประมาณ ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportOverviewProvince.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> ผลการดําเนินงานภาพรวม ระดับจังหวัด</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportOverviewZone.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> ผลการดําเนินงานภาพรวม ระดับภาค</a>
+                <a class="list-group-item list-group-item-action bg-light"
+                    href="{{ route('monthReportMeetingDoc.index') }}">
+                    ผลการดําเนินงานรายเดือน -> แผนบริหารจัดการ -> เอกสารแนบการประชุมศอ.ปส.จ.</a>
             </div>
 
         </div>

@@ -4,6 +4,7 @@ use App\Http\Controllers\businessesController;
 use App\Http\Controllers\cbTxController;
 use App\Http\Controllers\cbtxesReportController;
 use App\Http\Controllers\cbtxesReportSpecificController;
+use App\Http\Controllers\communityReportAmountDistrictController;
 use App\Http\Controllers\communityReportAmountProvinceController;
 use App\Http\Controllers\communityReportAmountSubdistrictController;
 use App\Http\Controllers\communityReportDetailVillageController;
@@ -12,14 +13,29 @@ use App\Http\Controllers\communityReportOverviewProvinceController;
 use App\Http\Controllers\communityReportOverviewSubdistrictController;
 use App\Http\Controllers\communityReportOverviewVillageController;
 use App\Http\Controllers\communityReportPersonController;
+use App\Http\Controllers\communityReportProblemController;
 use App\Http\Controllers\communityReportRequestController;
 use App\Http\Controllers\communityReportStatisticalController;
+use App\Http\Controllers\communityReportVillageCompareController;
+use App\Http\Controllers\communityReportVillageController;
 use App\Http\Controllers\cooperatePeopleController;
 use App\Http\Controllers\cooperationController;
 use App\Http\Controllers\importMonthController;
 use App\Http\Controllers\importRoutineController;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\mangeIntegrationController;
+use App\Http\Controllers\monthReporBudProvinceController;
+use App\Http\Controllers\monthReportBudZoneController;
+use App\Http\Controllers\monthReportHighlightController;
+use App\Http\Controllers\monthReportMeetingDocController;
+use App\Http\Controllers\monthReportMeetingProvinceController;
+use App\Http\Controllers\monthReportMeetingZoneController;
+use App\Http\Controllers\monthReportNewsProvinceController;
+use App\Http\Controllers\monthReportNewsZoneController;
+use App\Http\Controllers\monthReportOverviewProvinceController;
+use App\Http\Controllers\monthReportOverviewZoneController;
+use App\Http\Controllers\monthReportSpendingProvinceController;
+use App\Http\Controllers\monthReportSpendingZoneController;
 use App\Http\Controllers\policeSchoolController;
 use App\Http\Controllers\religiousesController;
 use App\Http\Controllers\religiousReportDistrictController;
@@ -56,7 +72,6 @@ use App\Http\Controllers\youthOutReportSubDistrictController;
 use App\Http\Controllers\youthOutReportOverviewController;
 use App\Http\Controllers\youthOutReportProvinceController;
 use App\Http\Controllers\youthOutReportSumController;
-use App\Models\communityReportOverviewVillage;
 use Illuminate\Support\Facades\Route;
 
 
@@ -123,6 +138,23 @@ Route::resource('communityReportOverviewDistrict', communityReportOverviewDistri
 Route::resource('communityReportOverviewVillage', communityReportOverviewVillageController::class);
 Route::resource('communityReportAmountSubdistrict', communityReportAmountSubdistrictController::class);
 Route::resource('communityReportAmountProvince', communityReportAmountProvinceController::class);
+Route::resource('communityReportAmountDistrict', communityReportAmountDistrictController::class);
+Route::resource('communityReportVillage', communityReportVillageController::class);
+Route::resource('communityReportProblem', communityReportProblemController::class);
+Route::resource('communityReportVillageCompare', communityReportVillageCompareController::class);
+
+Route::resource('monthReportHighlight', monthReportHighlightController::class);
+Route::resource('monthReportBudProvince', monthReporBudProvinceController::class);
+Route::resource('monthReportBudZone', monthReportBudZoneController::class);
+Route::resource('monthReportMeetingProvince', monthReportMeetingProvinceController::class);
+Route::resource('monthReportMeetingZone', monthReportMeetingZoneController::class);
+Route::resource('monthReportNewsProvince', monthReportNewsProvinceController::class);
+Route::resource('monthReportNewsZone', monthReportNewsZoneController::class);
+Route::resource('monthReportSpendingProvince', monthReportSpendingProvinceController::class);
+Route::resource('monthReportSpendingZone', monthReportSpendingZoneController::class);
+Route::resource('monthReportOverviewProvince', monthReportOverviewProvinceController::class);
+Route::resource('monthReportOverviewZone', monthReportOverviewZoneController::class);
+Route::resource('monthReportMeetingDoc', monthReportMeetingDocController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
