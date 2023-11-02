@@ -15,7 +15,6 @@
     @extends('layout.layout')
 
     @section('content')
-    <div class="container mt-2">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3>ข้อมูลใช้งานทั้งหมด (TEST)</h3>
@@ -29,16 +28,15 @@
                 <th>กลุ่มผู้ใช้งาน</th>
                 <th>แผนก หรือหน่วยงาน</th>
             </tr>
-            @foreach($total_user as $item)
-            <tr>
-                <td>{{ $item->group_id }}</td>
-                <td>{{ $item->username }}</td>
-                <td>{{ $item->user_type }}</td>
-                <td>{{ $item->department }}</td>
-            </tr>
+            @foreach ($total_user as $item)
+                <tr>
+                    <td>{{ $item->group_id }}</td>
+                    <td>{{ $item->username }}</td>
+                    <td>{{ $item->user_type }}</td>
+                    <td>{{ $item->department }}</td>
+                </tr>
             @endforeach
         </table>
-    </div>
     @endsection
 </body>
 
