@@ -58,21 +58,21 @@
                     </div>
                 </div>
                 <div class="sidebar_blog_2">
-                    <h4>General</h4>
+                    <h4>การบันทึกข้อมูล</h4>
                     <ul class="list-unstyled components">
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>พื้นที่เสี่ยง</span></a>
                         <li class="active">
                             <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                                    class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                                    class="fa fa-dashboard yellow_color"></i> <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
                             <ul class="collapse list-unstyled" id="dashboard">
                                 <li>
-                                    <a href="dashboard.html">> <span>Default Dashboard</span></a>
+                                    <a href="dashboard.html">> <span>รายงานสรุปจำนวน</span></a>
                                 </li>
                                 <li>
                                     <a href="dashboard_2.html">> <span>Dashboard style 2</span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a>
                         </li>
                         <li>
                             <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
@@ -84,6 +84,7 @@
                                 <li><a href="invoice.html">> <span>Invoice</span></a></li>
                             </ul>
                         </li>
+                        <h4>การบันทึกข้อมูล</h4>
                         <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
                         <li>
                             <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
