@@ -33,9 +33,9 @@
         -> button section
         -> pagination
         -> model bt
-    17. Gallery Section     
+    17. Gallery Section
     18. Icons
-    19. Invoice  
+    19. Invoice
     20. Price table
     21. Mail
     22. Price table page
@@ -44,7 +44,7 @@
     25. Login Section
     26. Error
     27. Map
-   
+
 -------------------------------------------------------------------*/
 
 
@@ -58,6 +58,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
 
 /*------------------------------------------------------------------
     2. import files
@@ -80,8 +81,8 @@
 html,
 body {
     color: #898989;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-family: 'K2D', sans-serif;
     line-height: normal;
     font-weight: 300;
     overflow-x: hidden !important;
@@ -123,6 +124,7 @@ a {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-family: 'K2D', sans-serif;
 }
 
 h1,
@@ -138,7 +140,8 @@ h6 {
     font-weight: normal;
     line-height: normal;
     color: #1f1f1f;
-    margin: 0
+    margin: 0;
+    font-family: 'K2D', sans-serif;
 }
 
 h1 {
@@ -186,13 +189,15 @@ h5 a,
 h6 a {
     color: #212121;
     text-decoration: none!important;
-    opacity: 1
+    opacity: 1;
+    font-family: 'K2D', sans-serif;
 }
 
 a {
     color: #898989;
     text-decoration: none;
     outline: none;
+    font-family: 'K2D', sans-serif;
 }
 
 a,
@@ -204,6 +209,7 @@ a,
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-family: 'K2D', sans-serif;
 }
 
 .btn-custom {
@@ -403,6 +409,7 @@ a:focus {
     padding: 0 15px;
     float: left;
     min-height: 25px;
+    font-family: 'K2D', sans-serif;
 }
 
 .border_radius_0 {
@@ -618,7 +625,7 @@ a:focus {
 
 
 /*==============
-    - topbar 
+    - topbar
 ==============*/
 
 .topbar {
@@ -2134,7 +2141,7 @@ i.icon {
 
 
 /*------------------------------------------------------------------
-    16. General Elements 
+    16. General Elements
 -------------------------------------------------------------------*/
 
 .link.today {
@@ -2266,7 +2273,7 @@ i.icon {
 
 
 /*------------------------------------------------------------------
-    17. Gallery Section   
+    17. Gallery Section
 -------------------------------------------------------------------*/
 
 .gallery_section_inner .column {
@@ -2291,7 +2298,7 @@ i.icon {
 
 
 /*------------------------------------------------------------------
-    18. Icons  
+    18. Icons
 -------------------------------------------------------------------*/
 
 .fontawesome-icons-list .fw_icon a {
@@ -2332,7 +2339,7 @@ i.icon {
 
 
 /*------------------------------------------------------------------
-    19. Invoice  
+    19. Invoice
 -------------------------------------------------------------------*/
 
 h2.invoice_head {
@@ -2413,7 +2420,7 @@ h2.invoice_head small {
 
 
 /*------------------------------------------------------------------
-    20. Price table  
+    20. Price table
 -------------------------------------------------------------------*/
 
 .price_table table.table {
@@ -3414,4 +3421,13 @@ table.projects tr td:first-child {
 #map {
     height: 100%;
     min-height: 720px;
+}
+
+/*------------------------------------------------------------------
+    28. dataTables
+-------------------------------------------------------------------*/
+
+.dataTables_wrapper {
+    font-family: 'K2D', sans-serif;
+    font-weight: 300; /* Optional: Specify the font weight */
 }
