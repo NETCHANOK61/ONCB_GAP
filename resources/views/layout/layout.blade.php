@@ -11,6 +11,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <!-- site icon -->
     <link rel="icon" href="images/fevicon.png" type="image/png" />
     <!-- bootstrap css -->
@@ -19,8 +20,6 @@
     <link rel="stylesheet" href="template/style.css" />
     <!-- responsive css -->
     <link rel="stylesheet" href="template/css/responsive.css" />
-    <!-- color css -->
-    <link rel="stylesheet" href="template/css/colors.css" />
     <!-- select bootstrap -->
     <link rel="stylesheet" href="template/css/bootstrap-select.css" />
     <!-- scrollbar css -->
@@ -31,6 +30,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub:300" />
 </head>
 
 <body class="dashboard dashboard_1">
@@ -60,10 +67,12 @@
                 <div class="sidebar_blog_2">
                     <h4>การบันทึกข้อมูล</h4>
                     <ul class="list-unstyled components">
-                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>พื้นที่เสี่ยง</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i>
+                                <span>พื้นที่เสี่ยง</span></a>
                         <li class="active">
                             <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                                    class="fa fa-dashboard yellow_color"></i> <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
+                                    class="fa fa-dashboard yellow_color"></i>
+                                <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
                             <ul class="collapse list-unstyled" id="dashboard">
                                 <li>
                                     <a href="dashboard.html">> <span>รายงานสรุปจำนวน</span></a>
@@ -138,8 +147,9 @@
                             <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i
                                     class="fa fa-bars"></i></button>
                             <div class="logo_section">
-                                <a href="{{ route('main.index') }}"><img class="img-responsive" src="template/images/logo/logo.png"
-                                        alt="#" /></a>
+                                {{-- <a style="color: #fff; margin-top:">การบริหารจัดการการเข้าถึงข้อมูลของผู้ใช้งานระบบ NISPA <br> (User access management)</a> --}}
+                                {{-- <a href="{{ route('main.index') }}"><img class="img-responsive"
+                                        src="template/images/logo/logo.png" alt="#" /></a> --}}
                             </div>
                             <div class="right_topbar">
                                 <div class="icon_info">
@@ -196,13 +206,13 @@
                         <!-- end table -->
                     </div>
                     <!-- footer -->
-                    <div class="container-fluid">
+                    {{-- <div class="container-fluid">
                         <div class="footer">
                             <p>Copyright © 2018 Designed by html.design. All rights reserved.<br><br>
                                 Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <!-- end dashboard inner -->
             </div>
@@ -230,7 +240,17 @@
     </script>
     <!-- custom js -->
     <script src="template/js/custom.js"></script>
-    <script src="template/js/chart_custom_style1.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let table = new DataTable('#myTable', {
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/th.json',
+                },
+            });
+        });
+    </script>
+    {{-- <script src="template/js/chart_custom_style1.js"></script> --}}
 </body>
 
 </html>
