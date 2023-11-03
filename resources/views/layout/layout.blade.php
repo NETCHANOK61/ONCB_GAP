@@ -67,72 +67,154 @@
                 <div class="sidebar_blog_2">
                     <h4>การบันทึกข้อมูล</h4>
                     <ul class="list-unstyled components">
-                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i>
-                                <span>พื้นที่เสี่ยง</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i><span>พื้นที่เสี่ยง</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>ศาสนสถาน</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i><span>เป้าหมายโรงเรียน</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i><span>สถานประกอบกิจการ</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>ตํารวจประสานโรงเรียน</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>เยาวชนนอกสถานศึกษา</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>การมีส่วนร่วมภาคประชาชน</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>การอบรมเครือข่ายหมู่บ้าน/<br>ชุมชนร่วมใจต้านยาเสพติด</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>ชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>ความร่วมมือระหว่างประเทศ</span></a>
+                        <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>มาตราการการบริหารจัดการ<br>อย่างบูรณาการ</span></a></li>
                         <li class="active">
-                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                                    class="fa fa-dashboard yellow_color"></i>
+                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa fa-dashboard yellow_color"></i>
                                 <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
                             <ul class="collapse list-unstyled" id="dashboard">
-                                <li>
-                                    <a href="dashboard.html">> <span>รายงานสรุปจำนวน</span></a>
-                                </li>
-                                <li>
-                                    <a href="dashboard_2.html">> <span>Dashboard style 2</span></a>
-                                </li>
+                                <li><a href="dashboard.html">> <span>รายงานสรุปจำนวน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานรายชื่อลูกจ้าง</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>กรณีต่อสัญญาฉบับใหม่</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>การบันทึกข้อมูลบุคลากร</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานสรุปผลการปฏิบัติงาน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานสถิตินําเข้าผลการปฏิบัติงาน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานรายละเอียดผลการปฏิบัติงาน</span></a></li>
                             </ul>
                         </li>
-                        </li>
-                        <li>
-                            <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                                    class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
-                            <ul class="collapse list-unstyled" id="element">
-                                <li><a href="general_elements.html">> <span>General Elements</span></a></li>
-                                <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
-                                <li><a href="icons.html">> <span>Icons</span></a></li>
-                                <li><a href="invoice.html">> <span>Invoice</span></a></li>
+                    
+                        
+                        <h4>สถานะการนําเข้าข้อมูล</h4>
+                        <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>รายวัน</span></a></li>
+                        <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>รายเดือน</span></a></li>
+
+                        <h4>รายงาน</h4>
+                        <li class="active">
+                            <a href="#dashboard2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa fa-dashboard yellow_color"></i>
+                                <span>รายงานผลการดําเนินงานรายวัน</span></a>
+                                <ul class="collapse list-unstyled" id="dashboard2">
+                                    <li class="active">
+                                        <a href="#dashboard3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                            <i class="fa fa-dashboard yellow_color"></i>
+                                            <span>ศาสนสถาน</span></a><ul class="collapse list-unstyled" id="dashboard3">
+                                                <li><a href="dashboard.html">> <span>ผลการดําเนินงานระดับภาค</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับจังหวัด</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานภาพรวม</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a></li>
+                                            </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#dashboard4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                            <i class="fa fa-dashboard yellow_color"></i>
+                                            <span>มาตราการการบําบัดยาเสพติด</span></a>
+                                            <ul class="collapse list-unstyled" id="dashboard4">
+                                                <li><a href="dashboard.html">> <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx)</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx) รายบุคคล</span></a></li>
+                                            </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#dashboard5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                            <i class="fa fa-dashboard yellow_color"></i>
+                                            <span>มาตราการการบําบัดยาเสพติด<br>(เยาวชนนอกสถานศึกษา)</span></a>
+                                            <ul class="collapse list-unstyled" id="dashboard5">
+                                                <li><a href="dashboard.html">> <span>สรุปผลปฏิบัติงาน</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานภาพรวม</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับจังหวัด</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a></li>
+                                            </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#dashboard6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                            <i class="fa fa-dashboard yellow_color"></i>
+                                            <span>พื้นที่เสี่ยง</span></a>
+                                            <ul class="collapse list-unstyled" id="dashboard6">
+                                                <li><a href="dashboard.html">> <span>ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานแยกตามประเภทระดับอำเภอ/เขต</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานแยกตามประเภทระดับจังหวัด</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับอําเภอ/เขต</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานภาพรวม</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>สรุปผลปฏิบัติงาน</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>สรุปผลปฏิบัติงาน</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานภาพรวม</span></a></li>
+                                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานระดับจังหวัด</span></a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                        <li class="active">
+                            <a href="#dashboard7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa fa-dashboard yellow_color"></i>
+                                <span>ผลการดําเนินงานในสถานศึกษา</span></a>
+                            <ul class="collapse list-unstyled" id="dashboard7">
+                                <li><a href="dashboard.html">> <span>รายงานผลการดําเนินงานตามแผนยุทธศาสตร์การป้องกันยาเสพติดในสถานศึกษาประจำปี</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานผลการดําเนินงานภาพรวมด้านการป้องกันยาเสพติดในศูนย์พัฒนาเด็กเล็ก(ศพด.)</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>ผลการดําเนินงานป้องกันและแก้ไขปัญหายาเสพติดในสถานศึกษา</span></a></li>
                             </ul>
-                        </li>
-                        <h4>การบันทึกข้อมูล</h4>
-                        <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
-                        <li>
-                            <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                                    class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
-                            <ul class="collapse list-unstyled" id="apps">
-                                <li><a href="email.html">> <span>Email</span></a></li>
-                                <li><a href="calendar.html">> <span>Calendar</span></a></li>
-                                <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing
-                                    Tables</span></a></li>
-                        <li>
-                            <a href="contact.html">
-                                <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
                         </li>
                         <li class="active">
-                            <a href="#additional_page" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional
-                                    Pages</span></a>
-                            <ul class="collapse list-unstyled" id="additional_page">
-                                <li>
-                                    <a href="profile.html">> <span>Profile</span></a>
-                                </li>
-                                <li>
-                                    <a href="project.html">> <span>Projects</span></a>
-                                </li>
-                                <li>
-                                    <a href="login.html">> <span>Login</span></a>
-                                </li>
-                                <li>
-                                    <a href="404_error.html">> <span>404 Error</span></a>
-                                </li>
+                            <a href="#dashboard8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa fa-dashboard yellow_color"></i>
+                                <span>ผลแบบสํารวจสภาพปัญหายาเสพติด<br>ในระดับหมู่บ้าน/ชุมชน</span></a>
+                            <ul class="collapse list-unstyled" id="dashboard8">
+                                <li><a href="dashboard.html">> <span>รายชื่อลงทะเบียนขอใช้สิทธิ์</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายชื่อผู้เกี่ยวข้องกับยาเสพติด</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>ผลการประเมินส่งสํานักงานสถิติฯ</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>แบบสรุปภาพรวม จําแนกรายตําบล</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>แบบสรุปภาพรวม จําแนกรายจังหวัด</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>แบบละเอียด จําแนกรายหมู่บ้าน/ชุมชน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>แบบสรุปภาพรวม จําแนกรายอําเภอ/เขต</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>แบบสรุปภาพรวม จําแนกรายหมู่บ้าน/ชุมชน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับตําบล</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับจังหวัด</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน ระดับอำเภอ</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>จําแนกสภาพปัญหาและสถานะความเข้มแข็ง จําแนกรายหมู่บ้าน/ชุมชน</span></a></li>
+                                <li><a href="dashboard_2.html">> <span>ตารางเปรียบเทียบผลการสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน เปรียบเทียบระหว่างปีงบประมาณ</span></a></li>
                             </ul>
                         </li>
-                        <li><a href="map.html"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
-                        <li><a href="charts.html"><i class="fa fa-bar-chart-o green_color"></i>
-                                <span>Charts</span></a></li>
-                        <li><a href="settings.html"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a>
+                        <li class="active">
+                            <a href="#dashboard9" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="fa fa-dashboard yellow_color"></i>
+                                <span>ผลการดําเนินงานรายเดือน</span></a>
+                            <ul class="collapse list-unstyled" id="dashboard9">
+                                <li class="active">
+                                    <a href="#dashboard11" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                        <i class="fa fa-dashboard yellow_color"></i>
+                                        <span>โครงการสําคัญ(Highlight)</span></a>
+                                    <ul class="collapse list-unstyled" id="dashboard11">
+                                        <li><a href="dashboard.html">> <span>รายงานโครงการสําคัญ(Highlight)</a></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#dashboard10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                        <i class="fa fa-dashboard yellow_color"></i>
+                                        <span>แผนบริหารจัดการ</span></a>
+                                    <ul class="collapse list-unstyled" id="dashboard10">
+                                        <li><a href="dashboard.html">> <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ ระดับจังหวัด</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ ระดับภาค</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม. ระดับจังหวัด</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม. ระดับภาค</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว) ระดับจังหวัด</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว) ระดับภาค</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>รายงานผลการใช้จ่ายงบประมาณ ระดับภาค</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>รายงานผลการใช้จ่ายงบประมาณ ระดับจังหวัด</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>ผลการดําเนินงานภาพรวม ระดับจังหวัด</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>ผลการดําเนินงานภาพรวม ระดับภาค</a></span></a></li>
+                                        <li><a href="dashboard.html">> <span>เอกสารแนบการประชุมศอ.ปส.จ.</a></span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -147,9 +229,8 @@
                             <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i
                                     class="fa fa-bars"></i></button>
                             <div class="logo_section">
-                                {{-- <a style="color: #fff; margin-top:">การบริหารจัดการการเข้าถึงข้อมูลของผู้ใช้งานระบบ NISPA <br> (User access management)</a> --}}
-                                {{-- <a href="{{ route('main.index') }}"><img class="img-responsive"
-                                        src="template/images/logo/logo.png" alt="#" /></a> --}}
+                                <a href="{{ route('main.index') }}"><img class="img-responsive"
+                                        src="template/images/logo/logo.png" alt="#" /></a>
                             </div>
                             <div class="right_topbar">
                                 <div class="icon_info">
