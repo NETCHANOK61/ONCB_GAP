@@ -25,7 +25,7 @@
         <table id="myTable" class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Group ID</th>
+                    <th width="15%">Group ID</th>
                     <th>username</th>
                     <th>กลุ่มผู้ใช้งาน</th>
                     <th>แผนก หรือหน่วยงาน</th>

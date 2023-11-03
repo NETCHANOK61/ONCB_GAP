@@ -986,6 +986,32 @@ a[data-toggle="collapse"] {
     animation: online 2s infinite
 }
 
+.able_animation {
+    width: 20px;
+    height: 20px;
+    background: #1ed085;
+    border-radius: 100%;
+    margin-top: 0;
+    position: relative;
+    top: 1px;
+    -webkit-animation: online 2s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: online 2s infinite
+}
+
+.unable_animation {
+    width: 20px;
+    height: 20px;
+    background: #d01e1e;
+    border-radius: 100%;
+    margin-top: 0;
+    position: relative;
+    top: 1px;
+    -webkit-animation: online 2s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: online 2s infinite
+}
+
 
 /* Safari 4.0 - 8.0 */
 
