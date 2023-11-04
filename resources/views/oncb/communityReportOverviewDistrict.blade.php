@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    @extends('layout.layout')
+    @extends('layout.two_table')
 
     @section('content')
         <div class="container mt-2">

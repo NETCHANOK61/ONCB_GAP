@@ -67,56 +67,11 @@
                     </div>
                 </div>
                 <div class="sidebar_blog_2">
-                    <h4>การบันทึกข้อมูล</h4>
                     <ul class="list-unstyled components">
-                        <li><a href="{{ route('riskArea.index') }}"><i
-                                    class="fa fa-clock-o orange_color"></i><span>พื้นที่เสี่ยง</span></a>
-                        <li><a href="{{ route('religiouses.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>ศาสนสถาน</span></a>
-                        <li><a href="{{ route('schoolTarget.index') }}"><i
-                                    class="fa fa-clock-o orange_color"></i><span>เป้าหมายโรงเรียน</span></a>
-                        <li><a href="{{ route('businesses.index') }}"><i
-                                    class="fa fa-clock-o orange_color"></i><span>สถานประกอบกิจการ</span></a>
-                        <li><a href="{{ route('policeSchool.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>ตํารวจประสานโรงเรียน</span></a>
-                        <li><a href="{{ route('youthOut.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>เยาวชนนอกสถานศึกษา</span></a>
-                        <li><a href="{{ route('cooperatePeople.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>การมีส่วนร่วมภาคประชาชน</span></a>
-                        <li><a href="{{ route('villageTraining.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>การอบรมเครือข่ายหมู่บ้าน/<br>ชุมชนร่วมใจต้านยาเสพติด</span></a>
-                        <li><a href="{{ route('cbTx.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>ชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
-                        <li><a href="{{ route('cooperation.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>ความร่วมมือระหว่างประเทศ</span></a>
-                        <li><a href="{{ route('mangeIntegration.index') }}"><i class="fa fa-clock-o orange_color"></i>
-                                <span>มาตราการการบริหารจัดการ<br>อย่างบูรณาการ</span></a></li>
-                        <li class="active">
-                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                <i class="fa fa-dashboard yellow_color"></i>
-                                <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
-                            <ul class="collapse list-unstyled" id="dashboard">
-                                <li><a href="{{ route('staffSum.index') }}">> <span>รายงานสรุปจำนวน</span></a></li>
-                                <li><a href="{{ route('staffEmployees.index') }}">>
-                                        <span>รายงานรายชื่อลูกจ้าง</span></a></li>
-                                <li><a href="{{ route('staffNewcontracts.index') }}">>
-                                        <span>กรณีต่อสัญญาฉบับใหม่</span></a></li>
-                                <li><a href="{{ route('staffInfos.index') }}">> <span>การบันทึกข้อมูลบุคลากร</span></a>
-                                </li>
-                                <li><a href="{{ route('staffPerformances.index') }}">>
-                                        <span>รายงานสรุปผลการปฏิบัติงาน</span></a></li>
-                                <li><a href="{{ route('staffStatistics.index') }}">>
-                                        <span>รายงานสถิตินําเข้าผลการปฏิบัติงาน</span></a></li>
-                                <li><a href="{{ route('staffDetails.index') }}">>
-                                        <span>รายงานรายละเอียดผลการปฏิบัติงาน</span></a></li>
-                            </ul>
-                        </li>
-
-
                         <h4>สถานะการนําเข้าข้อมูล</h4>
-                        <li><a href="{{ route('importRoutine.index') }}"><i class="fa fa-table purple_color2"></i>
+                        <li><a href="{{ route('importRoutine.index') }}"><i class="fa fa-table yellow_color"></i>
                                 <span>รายวัน</span></a></li>
-                        <li><a href="{{ route('importMonths.index') }}"><i class="fa fa-table purple_color2"></i>
+                        <li><a href="{{ route('importMonths.index') }}"><i class="fa fa-table yellow_color"></i>
                                 <span>รายเดือน</span></a>
                         </li>
 
@@ -319,6 +274,52 @@
                                         </li>
                                     </ul>
                                 </li>
+                            </ul>
+                        </li>
+                        <h4>การบันทึกข้อมูล</h4>
+                        <li><a href="{{ route('riskArea.index') }}"><i
+                                    class="fa fa-clock-o yellow_color"></i><span>พื้นที่เสี่ยง</span></a>
+                        <li><a href="{{ route('religiouses.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>ศาสนสถาน</span></a>
+                        <li><a href="{{ route('schoolTarget.index') }}"><i
+                                    class="fa fa-clock-o yellow_color"></i><span>เป้าหมายโรงเรียน</span></a>
+                        <li><a href="{{ route('businesses.index') }}"><i
+                                    class="fa fa-clock-o yellow_color"></i><span>สถานประกอบกิจการ</span></a>
+                        <li><a href="{{ route('policeSchool.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>ตํารวจประสานโรงเรียน</span></a>
+                        <li><a href="{{ route('youthOut.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>เยาวชนนอกสถานศึกษา</span></a>
+                        <li><a href="{{ route('cooperatePeople.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>การมีส่วนร่วมภาคประชาชน</span></a>
+                        <li><a href="{{ route('villageTraining.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>การอบรมเครือข่ายหมู่บ้าน/<br>ชุมชนร่วมใจต้านยาเสพติด</span></a>
+                        <li><a href="{{ route('cbTx.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>ชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
+                        <li><a href="{{ route('cooperation.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                <span>ความร่วมมือระหว่างประเทศ</span></a>
+                        <li><a href="{{ route('mangeIntegration.index') }}"><i
+                                    class="fa fa-clock-o yellow_color"></i>
+                                <span>มาตราการการบริหารจัดการ<br>อย่างบูรณาการ</span></a></li>
+                        <li class="active">
+                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">
+                                <i class="fa fa-clock-o yellow_color"></i>
+                                <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
+                            <ul class="collapse list-unstyled" id="dashboard">
+                                <li><a href="{{ route('staffSum.index') }}">> <span>รายงานสรุปจำนวน</span></a></li>
+                                <li><a href="{{ route('staffEmployees.index') }}">>
+                                        <span>รายงานรายชื่อลูกจ้าง</span></a></li>
+                                <li><a href="{{ route('staffNewcontracts.index') }}">>
+                                        <span>กรณีต่อสัญญาฉบับใหม่</span></a></li>
+                                <li><a href="{{ route('staffInfos.index') }}">>
+                                        <span>การบันทึกข้อมูลบุคลากร</span></a>
+                                </li>
+                                <li><a href="{{ route('staffPerformances.index') }}">>
+                                        <span>รายงานสรุปผลการปฏิบัติงาน</span></a></li>
+                                <li><a href="{{ route('staffStatistics.index') }}">>
+                                        <span>รายงานสถิตินําเข้าผลการปฏิบัติงาน</span></a></li>
+                                <li><a href="{{ route('staffDetails.index') }}">>
+                                        <span>รายงานรายละเอียดผลการปฏิบัติงาน</span></a></li>
                             </ul>
                         </li>
                     </ul>
