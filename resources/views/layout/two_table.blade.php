@@ -74,236 +74,227 @@
                         <li><a href="{{ route('importMonths.index') }}"><i class="fa fa-table yellow_color"></i>
                                 <span>รายเดือน</span></a>
                         </li>
+                        <h4>รายงานผลการดําเนินงานรายวัน</h4>
+                        <li>
+                            <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                                    class="fa fa-file yellow_color"></i> <span>ศาสนสถาน</span></a>
+                            <ul class="collapse list-unstyled" id="element">
+                                <li><a href="{{ route('religiousReportZone.index') }}">>
+                                        <span>ผลการดําเนินงานระดับภาค</span></a></li>
+                                <li><a href="{{ route('religiousReportProvince.index') }}">>
+                                        <span>ผลการดําเนินงานระดับจังหวัด</span></a></li>
+                                <li><a href="{{ route('religiousReportOverview.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม</span></a></li>
+                                <li><a href="{{ route('religiousReportDistrict.index') }}">>
+                                        <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#element2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                                    class="fa fa-file yellow_color"></i> <span>มาตราการการบําบัดยาเสพติด</span></a>
+                            <ul class="collapse list-unstyled" id="element2">
+                                <li><a href="{{ route('cbtxesReport.index') }}">>
+                                        <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
+                                </li>
+                                <li><a href="{{ route('cbtxesReportSpecific.index') }}">>
+                                        <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx)
+                                            รายบุคคล</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#element3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                                    class="fa fa-file yellow_color"></i> <span>มาตราการการบําบัดยาเสพติด
+                                    <br>(เยาวชนนอกสถานศึกษา)</span></a>
+                            <ul class="collapse list-unstyled" id="element3">
+                                <li><a href="{{ route('youthOutReportSum.index') }}">>
+                                        <span>สรุปผลปฏิบัติงาน</span></a>
+                                </li>
+                                <li><a href="{{ route('youthOutReportOverview.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม</span></a>
+                                </li>
+                                <li><a href="{{ route('youthOutReportProvince.index') }}">>
+                                        <span>ผลการดําเนินงานระดับจังหวัด</span></a>
+                                </li>
+                                <li><a href="{{ route('youthOutReportDistrict.index') }}">>
+                                        <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a>
+                                </li>
+                                <li><a href="{{ route('youthOutReportSubDistrict.index') }}">>
+                                        <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#element4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                                    class="fa fa-file yellow_color"></i> <span>พื้นที่เสี่ยง</span></a>
+                            <ul class="collapse list-unstyled" id="element4">
+                                <li><a href="{{ route('riskAreaReportTypeSubdistrict.index') }}">>
+                                        <span>ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportTypeDistrict.index') }}">>
+                                        <span>ผลการดําเนินงานแยกตามประเภทระดับอำเภอ/เขต</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportTypeProvince.index') }}">>
+                                        <span>ผลการดําเนินงานแยกตามประเภทระดับจังหวัด</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportResultDistrict.index') }}">>
+                                        <span>ผลการดําเนินงานระดับอําเภอ/เขต</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportResultSubdistrict.index') }}">>
+                                        <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportOverview.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม</span></a>
+                                </li>
+                                <li><a href="{{ route('riskAreaReportSum.index') }}">>
+                                        <span>สรุปผลปฏิบัติงาน</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#element5" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle"><i class="fa fa-file yellow_color"></i>
+                                <span>การอบรมเครือข่ายหมู่บ้าน/ <br>ชุมชนร่วมใจต้านภัยยาเสพติด</span></a>
+                            <ul class="collapse list-unstyled" id="element5">
+                                <li><a href="{{ route('riskAreaReportTypeSubdistrict.index') }}">>
+                                        <span>ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</span></a>
+                                </li>
+                                <li><a href="{{ route('villageTrainingSum.index') }}">>
+                                        <span>สรุปผลปฏิบัติงาน</span></a>
+                                </li>
+                                <li><a href="{{ route('villageTrainingOverview.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม</span></a>
+                                </li>
+                                <li><a href="{{ route('villageTrainingProvince.index') }}">>
+                                        <span>ผลการดําเนินงานระดับจังหวัด</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <h4>รายงานผลการดําเนินงานในสถานศึกษา</h4>
+                        <li><a href="{{ route('schoolReportStratigic.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>ตามแผนยุทธศาสตร์การป้องกัน<br>ยาเสพติดในสถานศึกษาประจำปี</span></a>
+                        </li>
+                        <li><a href="{{ route('schoolReportChildren.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>ภาพรวมด้านการป้องกัน<br>ยาเสพติดในศูนย์พัฒนาเด็กเล็ก<br>(ศพด.)</span></a>
+                        </li>
+                        <li><a href="{{ route('schoolReport.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>ป้องกันและแก้ไขปัญหา<br>ยาเสพติดในสถานศึกษา</span></a>
+                        </li>
+                        <h4>รายงานผลแบบสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน</h4>
+                        <li><a href="{{ route('communityReportRequest.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>รายชื่อลงทะเบียนขอใช้สิทธิ์</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportPerson.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>รายชื่อผู้เกี่ยวข้องกับยาเสพติด</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportOverviewSub.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>แบบสรุปภาพรวมจําแนกรายตําบล</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportOverviewProvince.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>แบบสรุปภาพรวมจําแนก<br>รายจังหวัด</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportDetailVillage.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>แบบละเอียดจําแนก
+                                    <br>รายหมู่บ้าน/ชุมชน</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportOverviewDistrict.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>แบบสรุปภาพรวมจําแนก<br>รายอําเภอ/เขต</span></a>
+                        <li><a href="{{ route('communityReportOverviewVillage.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>แบบสรุปภาพรวมจําแนก<br>รายหมู่บ้าน/ชุมชน</span></a>
+                        </li>
+                        <li><a href="{{ route('communityReportAmountSubdistrict.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>รายงานสรุปจํานวนหมู่บ้าน/<br>ชุมชน ระดับตําบล</span></a></li>
+                        <li><a href="{{ route('communityReportAmountProvince.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>รายงานสรุปจํานวนหมู่บ้าน/<br>ชุมชน ระดับจังหวัด</span></a></li>
+                        <li><a href="{{ route('communityReportAmountDistrict.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>รายงานสรุปจํานวน หมู่บ้าน/<br>ชุมชน ระดับอำเภอ</span></a></li>
+                        <li><a href="{{ route('communityReportVillage.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>รายชื่อหมู่บ้าน/ชุมชนทั้งหมด<br>ที่ยังไม่ส่งแบบประเมิน</span></a></li>
+                        <li><a href="{{ route('communityReportProblem.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>จําแนกสภาพปัญหาและ<br>สถานะความเข้มแข็ง<br>จําแนกรายหมู่บ้าน/ชุมชน</span></a></li>
+                        <li><a href="{{ route('communityReportVillageCompare.index') }}"><i
+                                    class="fa fa-file yellow_color"></i>
+                                <span>ตารางเปรียบเทียบผลการสํารวจ<br>สภาพปัญหายาเสพติดในระดับ<br>หมู่บ้าน/ชุมชน
+                                    เปรียบเทียบ<br>ระหว่างปีงบประมาณ</span></a></li>
+                        </li>
+                        <h4>ผลการดําเนินงานรายเดือน</h4>
+                        <li><a href="{{ route('monthReportHighlight.index') }}"><i
+                                    class="fa fa-file yellow_color"></i><span>รายงานโครงการสําคัญ
+                                    <br>(Highlight)</span></a>
+                        </li>
+                        <li>
+                            <a href="#element6" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle"><i class="fa fa-file yellow_color"></i>
+                                <span>แผนบริหารจัดการ</span></a>
+                            <ul class="collapse list-unstyled" id="element6">
+                                <li><a href="{{ route('monthReportBudProvince.index') }}">>
+                                        <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
+                                            ระดับจังหวัด</a></span></a></li>
+                                <li><a href="{{ route('monthReportBudZone.index') }}">>
+                                        <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
+                                            ระดับภาค</a></span></a></li>
+                                <li><a href="{{ route('monthReportMeetingProvince.index') }}">>
+                                        <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม.
+                                            ระดับจังหวัด</a></span></a></li>
+                                <li><a href="{{ route('monthReportMeetingZone.index') }}">>
+                                        <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม.
+                                            ระดับภาค</a></span></a></li>
+                                <li><a href="{{ route('monthReportNewsProvince.index') }}">>
+                                        <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว)
+                                            ระดับจังหวัด</a></span></a></li>
+                                <li><a href="{{ route('monthReportNewsZone.index') }}">>
+                                        <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว)
+                                            ระดับภาค</a></span></a></li>
+                                <li><a href="{{ route('monthReportSpendingZone.index') }}">>
+                                        <span>รายงานผลการใช้จ่ายงบประมาณ
+                                            ระดับภาค</a></span></a></li>
+                                <li><a href="{{ route('monthReportSpendingProvince.index') }}">>
+                                        <span>รายงานผลการใช้จ่ายงบประมาณ
+                                            ระดับจังหวัด</a></span></a></li>
+                                <li><a href="{{ route('monthReportOverviewProvince.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม
+                                            ระดับจังหวัด</a></span></a></li>
+                                <li><a href="{{ route('monthReportOverviewZone.index') }}">>
+                                        <span>ผลการดําเนินงานภาพรวม
+                                            ระดับภาค</a></span></a></li>
+                                <li><a href="{{ route('monthReportMeetingDoc.index') }}">>
+                                        <span>เอกสารแนบการประชุมศอ.ปส.จ.</a></span></a>
+                                </li>
+                            </ul>
+                        </li>
 
-                        <h4>รายงาน</h4>
-                        <li class="active">
-                            <a href="#dashboard2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                <i class="fa fa-dashboard yellow_color"></i>
-                                <span>รายงานผลการดําเนินงานรายวัน</span></a>
-                            <ul class="collapse list-unstyled" id="dashboard2">
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>ศาสนสถาน</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard3">
-                                        <li><a href="{{ route('religiousReportZone.index') }}">>
-                                                <span>ผลการดําเนินงานระดับภาค</span></a></li>
-                                        <li><a href="{{ route('religiousReportProvince.index') }}">>
-                                                <span>ผลการดําเนินงานระดับจังหวัด</span></a>
-                                        </li>
-                                        <li><a href="{{ route('religiousReportOverview.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม</span></a></li>
-                                        <li><a href="{{ route('religiousReportDistrict.index') }}">>
-                                                <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>มาตราการการบําบัดยาเสพติด</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard4">
-                                        <li><a href="{{ route('cbtxesReport.index') }}">>
-                                                <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
-                                        </li>
-                                        <li><a href="{{ route('cbtxesReportSpecific.index') }}">>
-                                                <span>รายงานผลการดําเนินงานการบําบัดฟื้นฟูผู้ใช้ยาเสพติดโดยชุมชนเป็นศูนย์กลาง(CBTx)
-                                                    รายบุคคล</span></a></li>
-                                    </ul>
-                                </li>
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>มาตราการการบําบัดยาเสพติด<br>(เยาวชนนอกสถานศึกษา)</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard5">
-                                        <li><a href="{{ route('youthOutReportSum.index') }}">>
-                                                <span>สรุปผลปฏิบัติงาน</span></a></li>
-                                        <li><a href="{{ route('youthOutReportOverview.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม</span></a></li>
-                                        <li><a href="{{ route('youthOutReportProvince.index') }}">>
-                                                <span>ผลการดําเนินงานระดับจังหวัด</span></a>
-                                        </li>
-                                        <li><a href="{{ route('youthOutReportDistrict.index') }}">>
-                                                <span>ผลการดําเนินงานระดับอำเภอ/เขต</span></a>
-                                        </li>
-                                        <li><a href="{{ route('youthOutReportSubDistrict.index') }}">>
-                                                <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>พื้นที่เสี่ยง</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard6">
-                                        <li><a href="{{ route('riskAreaReportTypeSubdistrict.index') }}">>
-                                                <span>ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</span></a></li>
-                                        <li><a href="{{ route('riskAreaReportTypeDistrict.index') }}">>
-                                                <span>ผลการดําเนินงานแยกตามประเภทระดับอำเภอ/เขต</span></a></li>
-                                        <li><a href="{{ route('riskAreaReportTypeProvince.index') }}">>
-                                                <span>ผลการดําเนินงานแยกตามประเภทระดับจังหวัด</span></a></li>
-                                        <li><a href="{{ route('riskAreaReportResultDistrict.index') }}">>
-                                                <span>ผลการดําเนินงานระดับอําเภอ/เขต</span></a></li>
-                                        <li><a href="{{ route('riskAreaReportResultSubdistrict.index') }}">>
-                                                <span>ผลการดําเนินงานระดับตำบล/แขวง</span></a>
-                                        </li>
-                                        <li><a href="{{ route('riskAreaReportOverview.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม</span></a></li>
-                                        <li><a href="{{ route('riskAreaReportSum.index') }}">>
-                                                <span>สรุปผลปฏิบัติงาน</span></a></li>
-                                        <li><a href="{{ route('villageTrainingSum.index') }}">>
-                                                <span>สรุปผลปฏิบัติงาน</span></a></li>
-                                        <li><a href="{{ route('villageTrainingOverview.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม</span></a></li>
-                                        <li><a href="{{ route('villageTrainingProvince.index') }}">>
-                                                <span>ผลการดําเนินงานระดับจังหวัด</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        <li class="active">
-                            <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                <i class="fa fa-dashboard yellow_color"></i>
-                                <span>ผลการดําเนินงานในสถานศึกษา</span></a>
-                            <ul class="collapse list-unstyled" id="dashboard7">
-                                <li><a href="{{ route('schoolReportStratigic.index') }}">>
-                                        <span>รายงานผลการดําเนินงานตามแผนยุทธศาสตร์การป้องกันยาเสพติดในสถานศึกษาประจำปี</span></a>
-                                </li>
-                                <li><a href="{{ route('schoolReportChildren.index') }}">>
-                                        <span>รายงานผลการดําเนินงานภาพรวมด้านการป้องกันยาเสพติดในศูนย์พัฒนาเด็กเล็ก(ศพด.)</span></a>
-                                </li>
-                                <li><a href="{{ route('schoolReport.index') }}">>
-                                        <span>ผลการดําเนินงานป้องกันและแก้ไขปัญหายาเสพติดในสถานศึกษา</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="active">
-                            <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                <i class="fa fa-dashboard yellow_color"></i>
-                                <span>ผลแบบสํารวจสภาพปัญหายาเสพติด<br>ในระดับหมู่บ้าน/ชุมชน</span></a>
-                            <ul class="collapse list-unstyled" id="dashboard8">
-                                <li><a href="{{ route('communityReportRequest.index') }}">>
-                                        <span>รายชื่อลงทะเบียนขอใช้สิทธิ์</span></a></li>
-                                <li><a href="{{ route('communityReportPerson.index') }}">>
-                                        <span>รายชื่อผู้เกี่ยวข้องกับยาเสพติด</span></a></li>
-                                <li><a href="{{ route('communityReportStatistical.index') }}">>
-                                        <span>ผลการประเมินส่งสํานักงานสถิติฯ</span></a></li>
-                                <li><a href="{{ route('communityReportOverviewSub.index') }}">> <span>แบบสรุปภาพรวม
-                                            จําแนกรายตําบล</span></a></li>
-                                <li><a href="{{ route('communityReportOverviewProvince.index') }}">>
-                                        <span>แบบสรุปภาพรวม จําแนกรายจังหวัด</span></a></li>
-                                <li><a href="{{ route('communityReportDetailVillage.index') }}">> <span>แบบละเอียด
-                                            จําแนกรายหมู่บ้าน/ชุมชน</span></a>
-                                </li>
-                                <li><a href="{{ route('communityReportOverviewDistrict.index') }}">>
-                                        <span>แบบสรุปภาพรวม จําแนกรายอําเภอ/เขต</span></a>
-                                </li>
-                                <li><a href="{{ route('communityReportOverviewVillage.index') }}">>
-                                        <span>แบบสรุปภาพรวม จําแนกรายหมู่บ้าน/ชุมชน</span></a>
-                                </li>
-                                <li><a href="{{ route('communityReportAmountSubdistrict.index') }}">>
-                                        <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน
-                                            ระดับตําบล</span></a></li>
-                                <li><a href="{{ route('communityReportAmountProvince.index') }}">>
-                                        <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน
-                                            ระดับจังหวัด</span></a></li>
-                                <li><a href="{{ route('communityReportAmountDistrict.index') }}">>
-                                        <span>รายงานสรุปจํานวน หมู่บ้าน/ชุมชน
-                                            ระดับอำเภอ</span></a></li>
-                                <li><a href="{{ route('communityReportVillage.index') }}">>
-                                        <span>รายชื่อหมู่บ้าน/ชุมชนทั้งหมดที่ยังไม่ส่งแบบประเมิน</span></a></li>
-                                <li><a href="{{ route('communityReportProblem.index') }}">>
-                                        <span>จําแนกสภาพปัญหาและสถานะความเข้มแข็ง
-                                            จําแนกรายหมู่บ้าน/ชุมชน</span></a></li>
-                                <li><a href="{{ route('communityReportVillageCompare.index') }}">>
-                                        <span>ตารางเปรียบเทียบผลการสํารวจสภาพปัญหายาเสพติดในระดับหมู่บ้าน/ชุมชน
-                                            เปรียบเทียบระหว่างปีงบประมาณ</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="active">
-                            <a href="#dashboard9" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle">
-                                <i class="fa fa-dashboard yellow_color"></i>
-                                <span>ผลการดําเนินงานรายเดือน</span></a>
-                            <ul class="collapse list-unstyled" id="dashboard9">
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>โครงการสําคัญ(Highlight)</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard11">
-                                        <li><a href="{{ route('monthReportHighlight.index') }}">>
-                                                <span>รายงานโครงการสําคัญ(Highlight)</a></span></a></li>
-                                    </ul>
-                                </li>
-                                <li class="active">
-                                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <i class="fa fa-dashboard yellow_color"></i>
-                                        <span>แผนบริหารจัดการ</span></a>
-                                    <ul class="collapse list-unstyled" id="dashboard10">
-                                        <li><a href="{{ route('monthReportBudProvince.index') }}">>
-                                                <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
-                                                    ระดับจังหวัด</a></span></a></li>
-                                        <li><a href="{{ route('monthReportBudZone.index') }}">>
-                                                <span>รายงานผลการใช้จ่ายงบประมาณจําแนกตามมาตรการ
-                                                    ระดับภาค</a></span></a></li>
-                                        <li><a href="{{ route('monthReportMeetingProvince.index') }}">>
-                                                <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม.
-                                                    ระดับจังหวัด</a></span></a></li>
-                                        <li><a href="{{ route('monthReportMeetingZone.index') }}">>
-                                                <span>ผลการดําเนินงานจัดประชุม ศอ.ปส.จ/กทม.
-                                                    ระดับภาค</a></span></a></li>
-                                        <li><a href="{{ route('monthReportNewsProvince.index') }}">>
-                                                <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว)
-                                                    ระดับจังหวัด</a></span></a></li>
-                                        <li><a href="{{ route('monthReportNewsZone.index') }}">>
-                                                <span>รายงานสถานการณ์ยาเสพติด(โต๊ะข่าว)
-                                                    ระดับภาค</a></span></a></li>
-                                        <li><a href="{{ route('monthReportSpendingZone.index') }}">>
-                                                <span>รายงานผลการใช้จ่ายงบประมาณ
-                                                    ระดับภาค</a></span></a></li>
-                                        <li><a href="{{ route('monthReportSpendingProvince.index') }}">>
-                                                <span>รายงานผลการใช้จ่ายงบประมาณ
-                                                    ระดับจังหวัด</a></span></a></li>
-                                        <li><a href="{{ route('monthReportOverviewProvince.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม
-                                                    ระดับจังหวัด</a></span></a></li>
-                                        <li><a href="{{ route('monthReportOverviewZone.index') }}">>
-                                                <span>ผลการดําเนินงานภาพรวม
-                                                    ระดับภาค</a></span></a></li>
-                                        <li><a href="{{ route('monthReportMeetingDoc.index') }}">>
-                                                <span>เอกสารแนบการประชุมศอ.ปส.จ.</a></span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
                         <h4>การบันทึกข้อมูล</h4>
                         <li><a href="{{ route('riskArea.index') }}"><i
-                                    class="fa fa-clock-o yellow_color"></i><span>พื้นที่เสี่ยง</span></a>
-                        <li><a href="{{ route('religiouses.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                    class="fa fa-edit yellow_color"></i><span>พื้นที่เสี่ยง</span></a>
+                        <li><a href="{{ route('religiouses.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>ศาสนสถาน</span></a>
                         <li><a href="{{ route('schoolTarget.index') }}"><i
-                                    class="fa fa-clock-o yellow_color"></i><span>เป้าหมายโรงเรียน</span></a>
+                                    class="fa fa-edit yellow_color"></i><span>เป้าหมายโรงเรียน</span></a>
                         <li><a href="{{ route('businesses.index') }}"><i
-                                    class="fa fa-clock-o yellow_color"></i><span>สถานประกอบกิจการ</span></a>
-                        <li><a href="{{ route('policeSchool.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                                    class="fa fa-edit yellow_color"></i><span>สถานประกอบกิจการ</span></a>
+                        <li><a href="{{ route('policeSchool.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>ตํารวจประสานโรงเรียน</span></a>
-                        <li><a href="{{ route('youthOut.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('youthOut.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>เยาวชนนอกสถานศึกษา</span></a>
-                        <li><a href="{{ route('cooperatePeople.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('cooperatePeople.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>การมีส่วนร่วมภาคประชาชน</span></a>
-                        <li><a href="{{ route('villageTraining.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('villageTraining.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>การอบรมเครือข่ายหมู่บ้าน/<br>ชุมชนร่วมใจต้านยาเสพติด</span></a>
-                        <li><a href="{{ route('cbTx.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('cbTx.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>ชุมชนเป็นศูนย์กลาง(CBTx)</span></a>
-                        <li><a href="{{ route('cooperation.index') }}"><i class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('cooperation.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>ความร่วมมือระหว่างประเทศ</span></a>
-                        <li><a href="{{ route('mangeIntegration.index') }}"><i
-                                    class="fa fa-clock-o yellow_color"></i>
+                        <li><a href="{{ route('mangeIntegration.index') }}"><i class="fa fa-edit yellow_color"></i>
                                 <span>มาตราการการบริหารจัดการ<br>อย่างบูรณาการ</span></a></li>
                         <li class="active">
                             <a href="#dashboard" data-toggle="collapse" aria-expanded="false"
                                 class="dropdown-toggle">
-                                <i class="fa fa-clock-o yellow_color"></i>
+                                <i class="fa fa-edit yellow_color"></i>
                                 <span>ข้อมูลบุคลากร<br>ที่ปฏิบัติภารกิจด้านยาเสพติด</span></a>
                             <ul class="collapse list-unstyled" id="dashboard">
                                 <li><a href="{{ route('staffSum.index') }}">> <span>รายงานสรุปจำนวน</span></a></li>
