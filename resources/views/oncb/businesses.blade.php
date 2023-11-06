@@ -19,12 +19,14 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h5>การบันทึกข้อมูล -> สําหรับจังหวัด/อําเภอ/เขต -> มาตราการป้องกันยาเสพติด -> สถานประกอบกิจการ</h5>
+                    <a href="http://192.168.200.101/strategy67/result/index.php" target="_blank" rel="noopener noreferrer"> <span><i
+                        class="fa fa-share-alt"></i></span> 192.168.200.101/strategy67/result/index.php</a>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h5>ผู้ใช้งานที่เข้าใช้งานได้</h5>
+                    <h5><span class="able_animation"></span> ผู้ใช้งานที่เข้าใช้งานได้</h5>
                 </div>
             </div>
             <table id="myTable" class="table table-bordered table-hover">
@@ -50,7 +52,7 @@
             <hr>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h5>ผู้ใช้งานในกลุ่มเดียวกัน <span class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
+                    <h5><span class="unable_animation"></span> ผู้ใช้งานในกลุ่มเดียวกัน <span class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
                 </div>
             </div>
             <table id="myGroup" class="table table-bordered">

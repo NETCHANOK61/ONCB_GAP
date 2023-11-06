@@ -18,6 +18,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h5>การบันทึกข้อมูล -> สําหรับจังหวัด/อําเภอ/เขต -> มาตราการป้องกันยาเสพติด -> พื้นที่เสี่ยง</h5>
+                <a href="http://192.168.200.101/strategy67/result/index.php" target="_blank" rel="noopener noreferrer">
+                    <span><i class="fa fa-share-alt"></i></span> 192.168.200.101/strategy67/result/index.php</a>
             </div>
         </div>
         <hr>

@@ -155,9 +155,6 @@
                                 class="dropdown-toggle"><i class="fa fa-file yellow_color"></i>
                                 <span>การอบรมเครือข่ายหมู่บ้าน/ <br>ชุมชนร่วมใจต้านภัยยาเสพติด</span></a>
                             <ul class="collapse list-unstyled" id="element5">
-                                <li><a href="{{ route('riskAreaReportTypeSubdistrict.index') }}">>
-                                        <span>ผลการดําเนินงานแยกตามประเภทระดับตําบล/แขวง</span></a>
-                                </li>
                                 <li><a href="{{ route('villageTrainingSum.index') }}">>
                                         <span>สรุปผลปฏิบัติงาน</span></a>
                                 </li>
@@ -349,7 +346,7 @@
                                                 <a class="dropdown-item" href="profile.html">ประวัติผู้ใช้งาน</a>
                                                 {{-- <a class="dropdown-item" href="settings.html">Settings</a>
                                                 <a class="dropdown-item" href="help.html">Help</a> --}}
-                                                <a class="dropdown-item" href="#">ออกจากระบบ <i
+                                                <a class="dropdown-item" href="{{route('out')}}">ออกจากระบบ <i
                                                         class="fa fa-sign-out"></i></a>
                                             </div>
                                         </li>

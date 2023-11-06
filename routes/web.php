@@ -169,7 +169,7 @@ Route::resource('monthReportMeetingDoc', monthReportMeetingDocController::class)
 Route::get('/', function () {
     return view('login');
     // return view('welcome');
-});
+})->name('out');
 
 Route::get('/2', function () {
     return view('login_2');
