@@ -53,7 +53,7 @@
             <hr>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h5><span class="able_animation"></span> ผู้ใช้งานในกลุ่มเดียวกัน <span class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
+                    <h5><span class="unable_animation"></span> ผู้ใช้งานในกลุ่มเดียวกัน <span class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
                 </div>
             </div>
             <table id="myGroup" class="table table-bordered table-hover">
@@ -66,7 +66,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($total_user as $item)
+                    @foreach ($unable as $item)
                         <tr>
                             <td>{{ $item->group_id }}</td>
                             <td>{{ $item->username }}</td>

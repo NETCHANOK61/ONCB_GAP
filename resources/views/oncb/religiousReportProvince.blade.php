@@ -19,7 +19,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h5>รายงาน -> รายงานผลการดําเนินงานรายวัน -> ศาสนสถาน -> ผลการดําเนินงานระดับจังหวัด</h5>
-                    <a href="http://192.168.200.101/strategy67/report/report_day.php" target="_blank" rel="noopener noreferrer">
+                    <a href="http://192.168.200.101/strategy67/report/report_day.php" target="_blank"
+                        rel="noopener noreferrer">
                         <span><i class="fa fa-share-alt"></i></span> 192.168.200.101/strategy67/report/report_day.php</a>
                 </div>
             </div>
@@ -52,7 +53,8 @@
             <hr>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h5><span class="unable_animation"></span>  ผู้ใช้งานในกลุ่มเดียวกัน <span class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
+                    <h5><span class="unable_animation"></span> ผู้ใช้งานในกลุ่มเดียวกัน <span
+                            class="text-danger">ที่ไม่สามารถเข้าใช้งานได้</span></h5>
                 </div>
             </div>
             <table id="myGroup" class="table table-bordered table-hover">
@@ -65,7 +67,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($total_user as $item)
+                    @foreach ($unable as $item)
                         <tr>
                             <td>{{ $item->group_id }}</td>
                             <td>{{ $item->username }}</td>
@@ -74,7 +76,8 @@
                         </tr>
                     @endforeach
                 </tbody>
-            </table>        </div>
+            </table>
+        </div>
     @endsection
 </body>
 

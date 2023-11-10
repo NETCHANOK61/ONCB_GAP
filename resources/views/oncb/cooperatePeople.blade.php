@@ -67,7 +67,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($total_user as $item)
+                    @foreach ($unable as $item)
                         <tr>
                             <td>{{ $item->group_id }}</td>
                             <td>{{ $item->username }}</td>
