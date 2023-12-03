@@ -1,0 +1,50 @@
+# วิธีการเตรียม laravel ให้สามารถใช้งาน login QR code thaID (mock)
+
+
+### install qrcode generator 
+```
+composer require simplesoftwareio/simple-qrcode
+```
+(จริง ๆ จะมีตัว config อยู่ใน file composer.json อยู่แล้วรัน cmd ข้างล่างได้เลย)
+```
+composer install
+```
+
+### เปิดดู ip ของเครื่องตัวเอง โดยใช้ command
+```
+ipconfig
+```
+
+### หา ip ของตัวเอง
+```
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2001:fb1:dd:2ded:9b45:da67:7e9d:97a8
+   Temporary IPv6 Address. . . . . . : 2001:fb1:dd:2ded:3d12:bf5d:fe8c:a6a1
+   Link-local IPv6 Address . . . . . : fe80::3b91:feb2:c0e1:13c4%6
+   IPv4 Address. . . . . . . . . . . : 192.168.1.36    // ip ตัวเอง
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::72f8:2bff:fef8:2894%6
+                                       192.168.1.1
+``` 
+
+### เอา ip + port ไปใส่ใน file .env ที่ config 'APP_URL'
+```
+APP_URL=http://192.168.1.36:8000
+```
+
+### clear config cache
+```
+php artisan config:clear
+```
+
+### run server ด้วย command
+```
+php artisan serve --host 0.0.0.0 --port 8000
+```
+
+### เพิ่มเติม
+  - โทรศัพท์ที่ scan QR code ต้องอยู่ network เดียวกัน (wifi เดียวกัน)
+  - เวลาเปิด browser อย่าเข้า http://127.0.0.1:8000 
+    ให้เข้า ip ของตัวเองที่ได้ใน command ipconfig (ในเคสนี้จะเป็น http://192.168.1.36:8000/)

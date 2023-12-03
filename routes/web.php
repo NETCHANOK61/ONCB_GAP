@@ -62,6 +62,7 @@ use App\Http\Controllers\staffNewcontractsController;
 use App\Http\Controllers\staffPerformancesController;
 use App\Http\Controllers\staffStatisticsController;
 use App\Http\Controllers\staffSumController;
+use App\Http\Controllers\ThaIDAuthController;
 use App\Http\Controllers\villageTrainingOverviewController;
 use App\Http\Controllers\villageTrainingProvinceController;
 use App\Http\Controllers\villageTrainingsController;
@@ -179,3 +180,7 @@ Route::get('/2', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/thaId/show-login-qr', [ThaIDAuthController::class, 'showLoginQr'])->name("thaID.showLoginQr");
+Route::get("/thaId/login-qr", [ThaIDAuthController::class, 'loginQr'])->name('thaID.loginQr');
+Route::get('/thaId/login-qr/check-status', [ThaIDAuthController::class, 'checkLoginStatus'])->name('thaID.loginQr.checkStatus');

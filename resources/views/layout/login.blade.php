@@ -55,8 +55,8 @@
 
                     <span class="d-block text-center my-4 text-muted">&mdash; หรือ &mdash;</span>
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            เข้าสู่ระบบด้วย...
+                        <button class="login100-form-btn" onclick="redirectToQRCodePage()">
+                            เข้าสู่ระบบด้วย ThaID
                         </button>
                     </div>
                     <div class="text-center p-t-20">
@@ -85,6 +85,10 @@
     <script>
         function redirectToMainIndex() {
             window.location = "{{ route('main.index') }}";
+        }
+
+        function redirectToQRCodePage() {
+            window.location = "{{ route('thaID.showLoginQr')}}";
         }
     </script>
 
