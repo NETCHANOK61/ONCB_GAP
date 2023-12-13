@@ -72,6 +72,7 @@ use App\Http\Controllers\youthOutReportSubDistrictController;
 use App\Http\Controllers\youthOutReportOverviewController;
 use App\Http\Controllers\youthOutReportProvinceController;
 use App\Http\Controllers\youthOutReportSumController;
+use App\Http\Controllers\usermanage;
 use Illuminate\Support\Facades\Route;
 
 
@@ -144,7 +145,7 @@ Route::resource('communityReportProblem', communityReportProblemController::clas
 Route::resource('communityReportVillageCompare', communityReportVillageCompareController::class);
 
 Route::resource('monthReportHighlight', monthReportHighlightController::class);
-Route::resource('monthReportBudProvince', monthReporBudProvinceController::class);
+Route::resource('monthReportBudProvince', monthReportBudProvinceController::class);
 Route::resource('monthReportBudZone', monthReportBudZoneController::class);
 Route::resource('monthReportMeetingProvince', monthReportMeetingProvinceController::class);
 Route::resource('monthReportMeetingZone', monthReportMeetingZoneController::class);
@@ -155,6 +156,8 @@ Route::resource('monthReportSpendingZone', monthReportSpendingZoneController::cl
 Route::resource('monthReportOverviewProvince', monthReportOverviewProvinceController::class);
 Route::resource('monthReportOverviewZone', monthReportOverviewZoneController::class);
 Route::resource('monthReportMeetingDoc', monthReportMeetingDocController::class);
+
+Route::resource('usermanage', usermanageController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes

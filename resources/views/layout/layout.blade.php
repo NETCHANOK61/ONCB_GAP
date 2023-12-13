@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sidebar_blog_2">
+                {{-- <div class="sidebar_blog_2">
                     <ul class="list-unstyled components">
                         <h4>สถานะการนําเข้าข้อมูล</h4>
                         <li><a href="{{ route('importRoutine.index') }}"><i class="fa fa-table yellow_color"></i>
@@ -311,6 +311,24 @@
                                         <span>รายงานรายละเอียดผลการปฏิบัติงาน</span></a></li>
                             </ul>
                         </li>
+                    </ul>
+                </div> --}}
+                <div class="sidebar_blog_2">
+                    <ul class="list-unstyled components">
+                        <h4>การจัดการผู้ใช้งาน</h4>
+                        <li><a href="#"><i class="fa fa-table yellow_color"></i>
+                                <span>ระดับจังหวัด</span></a></li>
+                        <li><a href="#"><i class="fa fa-table yellow_color"></i>
+                                <span>ระดับอำเภอ</span></a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_blog_2">
+                    <ul class="list-unstyled components">
+                        <h4>การจัดการคำขอสร้างบัญชีใหม่</h4>
+                        <li><a href="#"><i class="fa fa-table yellow_color"></i>
+                                <span>ระดับจังหวัด</span></a></li>
+                        <li><a href="#"><i class="fa fa-table yellow_color"></i>
+                                <span>ระดับอำเภอ</span></a></li>
                     </ul>
                 </div>
             </nav>
