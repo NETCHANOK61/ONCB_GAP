@@ -179,3 +179,7 @@ Route::get('/2', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/test2', function () {
+    return view('test2');
+})->name('test2');
