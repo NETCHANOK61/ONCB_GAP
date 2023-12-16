@@ -176,6 +176,20 @@ Route::get('/2', function () {
     // return view('welcome');
 });
 
+Route::get('/register', function () {
+    return view('register');
+    // return view('welcome');
+});
+
 Route::get('/test', function () {
     return view('test');
 });
+
+// mock up
+Route::get('/requestProvince', function () {
+    return view('request.province');
+})->name('requestProvince');
+
+Route::get('/requestDistrict', function () {
+    return view('request.district');
+})->name('requestDistrict');
